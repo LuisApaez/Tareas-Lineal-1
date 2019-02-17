@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{amsthm, amsmath, amssymb}
+
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    text={20cm,25cm},
+    centering,
+    top=1.5cm,
+    bottom=1.5cm
+}
+\parindent  = 0mm
+\parskip    = 4mm
+
+\usepackage[usenames]{color}
+\definecolor{azul}{RGB}{10,80,190}
+\definecolor{negro}{RGB}{0,0,0}
+\definecolor{rojo}{RGB}{200,40,40}
+\definecolor{verde}{RGB}{0,120,50}
+
+\newtheorem*{definition*}{Definición}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\usepackage{enumerate}
+
+\begin{document}
+    \title{Tarea 1. Espacios Vectoriales}
+    \author{\bf Careaga Carrillo Juan Manuel}
+    \date{22 de febrero de 2019}
+    \maketitle
+    
+    \begin{enumerate}
+        % Ejercicio 1
+        \item Sean $\mathbb{C}$ el campo de los números complejos, $\mathbb{R}$
+        el campo de los números reales y $\mathbb{Q}$ el campo de los números
+        racionales. Determine cuál de los siguientes es un espacio vectorial,
+        en caso de ser espacio vectorial obtenga una base. Argumente su
+        respuesta.
+        \begin{enumerate}[i.]
+            \item {
+                $\mathbb{C}$ sobre $\mathbb{C}$
+            }
+            \item {
+                $\mathbb{C}$ sobre $\mathbb{R}$
+            }
+            \item {
+                $\mathbb{R}$ sobre $\mathbb{C}$
+            }
+            \item {
+                $\mathbb{R}$ sobre $\mathbb{Q}$
+            }
+            \item {
+                $\mathbb{Q}$ sobre $\mathbb{R}$
+            }
+            \item {
+                $\mathbb{Q}$ sobre $\mathbb{Z}$ donde $\mathbb{Z}$ es el conjunto de números enteros.
+            }
+            \item {
+                $S=\left\{a+b\sqrt{2}+c\sqrt{5}\big\vert a,b,c\in\mathbb{Q}\right\}$ sobre $\mathbb{Q}$.
+            }
+            \item {
+                $S=\left\{a+b\sqrt{2}+c\sqrt{5}\big\vert a,b,c\in\mathbb{Q}\right\}$ sobre $\mathbb{R}$.
+            }
+            \item {
+                $S=\left\{a+b\sqrt{2}+c\sqrt{5}\big\vert a,b,c\in\mathbb{Q}\right\}$ sobre $\mathbb{C}$.
+            }
+        \end{enumerate}
+
+        % Ejercicio 2
+        \item Sea $\mathbb{R}^+\cup\{0\}$ el conjunto de todos los números reales positivos. Defina las siguientes operaciones:
+        $$x\boxplus y=xy \text{ para cualquiera } x,y\in\mathbb{R}^+$$ y
+        $$a\boxdot x=x^a \text{ para } x\in\mathbb{R}^+ \text{ y } a\in\mathbb{R}$$
+        \begin{enumerate}[i.]
+            \item {
+                Demuestre que $(\mathbb{R}^+\cup\{0\},\boxplus,\boxdot)$ es un espacio vectorial sobre $\mathbb{R}$.
+            }
+            \item {
+                Obtenga su dimensión y una base
+            }
+            \item {
+                Si se definiera $a\boxtimes x=a^x$ para $x\in\mathbb{R}^+$ y $a\in\mathbb{R}$ como la multiplicación por escalares, ¿$_\mathbb{R}(\mathbb{R}^+\cup\{0\})$?
+            }
+        \end{enumerate}
+
+        % Ejercicio 3
+        \item {
+            Sea $V$ un $F$ espacio vectorial, $\{x,y,z\}\subseteq_{F}V$ un conjunto linealmente independiente. Determine el valor de $k\in F$ para el cual $$\{y-x,kz-y,x-z\}$$ es un conjunto linealmente independiente.
+        }
+
+        % Ejercicio 4
+        \item Sea $\{x_1,x_2,\ldots,x_n\}$ una base para el espacio vectorial $_{F}V$, con $n\geq 2$.
+        \begin{enumerate}[a.]
+            \item {
+                Demuestre que $$\left\{x_1,x_1+x_2,x_1+x_2+x_3,\ldots,\sum_{i=1}^{n}{x_i}\right\}$$ es una base para $_{F}V$
+            }
+            \item {
+                El conjunto $$\{x_1+x_2,x_2+x_3,x_3+x_4,\ldots,x_{n-1}+x_n,x_n+x_1\}$$ ¿es base para $_{F}V$?
+            }
+            \item {
+                Si $\{x_1+x_2,x_2+x_3,x_3+x_4,\ldots,x_{n-1}+x_n,x_n+x_1\}$ es base para $_{F}V$, ¿$\{x_1,x_2,\ldots,x_n\}$ es base para $_{F}V$?
+            }
+        \end{enumerate}
+
+        % Ejercicio 5
+        \item 
+    \end{enumerate}
+\end{document}
